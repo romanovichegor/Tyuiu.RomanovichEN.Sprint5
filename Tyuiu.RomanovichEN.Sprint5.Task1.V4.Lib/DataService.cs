@@ -24,7 +24,7 @@ namespace Tyuiu.RomanovichEN.Sprint5.Task1.V4.Lib
                 double cosx = Math.Cos(x);
                 if (x + 1 != 0)
                 {
-                    y = cosx / (x + 1) - cosx * 1.3 + 3 * x;
+                    y = Math.Round(cosx / (x + 1) - cosx * 1.3 + 3 * x,2);
                     stry = Convert.ToString(y);
                 }
                 else
