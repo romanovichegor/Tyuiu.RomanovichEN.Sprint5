@@ -14,11 +14,14 @@ namespace Tyuiu.RomanovichEN.Sprint5.Task5.V30.Lib
             foreach (string s in strings)
             {
                 int IntPart = (int)Math.Floor(double.Parse(s));
-                if (Prime(IntPart))
+                if (double.Parse(s) == IntPart)
                 {
-                    if (IntPart > res)
+                    if (Prime(IntPart))
                     {
-                        res = IntPart;
+                        if (IntPart > res)
+                        {
+                            res = IntPart;
+                        }
                     }
                 }
             }
